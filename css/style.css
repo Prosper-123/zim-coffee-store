@@ -209,7 +209,124 @@ button {
     padding: 0px;
 }
 
+/*  this is the styles of events page for meet-ups */
 
+.events-workshops-section {
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .event {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+  
+  h3 {
+    color: #2c3e50;
+  }
+  
+  .register-btn {
+    background-color: #27ae60;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .register-btn:hover {
+    background-color: #1e8449;
+  }
+
+  /*    shopping cart page styles  */
+
+  .shopping-cart-section {
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .cart-items {
+    margin: 20px 0;
+  }
+  
+  .cart-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  h3 {
+    color: #2c3e50;
+  }
+  
+  .remove-btn {
+    background-color: #e74c3c;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .remove-btn:hover {
+    background-color: #c0392b;
+  }
+  
+  .cart-summary {
+    margin-top: 20px;
+  }
+  
+  .checkout-btn {
+    background-color: #27ae60;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .checkout-btn:hover {
+    background-color: #1e8449;
+  }
+  
+  /*  subscriptions page  */
+
+
+  .special-offers-section {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .promotions {
+    margin-bottom: 30px;
+  }
+  
+  h3 {
+    color: #2c3e50;
+  }
+  
+  .subscription-level {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 10px;
+  }
+  
+  .subscribe-btn {
+    background-color: #27ae60;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .subscribe-btn:hover {
+    background-color: #1e8449;
+  }
+  
 /* header section start */
 
 .header_section {
@@ -861,6 +978,8 @@ textarea#comment.massage-bt::placeholder {
     background-image: url(../images/footer-bg.png);
     background-size: 100% 100%;
     padding: 90px 0px 0px 0px;
+    margin: 20px;
+    margin-top: 50px;
 }
 
 .address_text {

@@ -319,3 +319,37 @@ $(function () {
 
 
 });
+
+// Sample items array (usually fetched from backend or localStorage)
+let cart = [
+	{ name: 'French Press', price: 40.00 },
+	{ name: 'Espresso Blend', price: 15.00 }
+  ];
+  
+  // Function to calculate total price
+  function calculateTotal() {
+	let total = 0;
+	cart.forEach(item => total += item.price);
+	document.querySelector('.cart-summary p').textContent = `Total: $${total.toFixed(2)}`;
+  }
+  
+  // Remove item from cart
+  document.querySelectorAll('.remove-btn').forEach((btn, index) => {
+	btn.addEventListener('click', () => {
+	  cart.splice(index, 1); // Remove the item from the array
+	  btn.parentElement.remove(); // Remove the item from the DOM
+	  calculateTotal(); // Update the total price
+	});
+  });
+  
+  // Initialize total
+  calculateTotal();
+
+  document.querySelectorAll('.subscribe-btn').forEach(button => {
+	button.addEventListener('click', () => {
+	  alert('Thank you for subscribing!'); // Replace this with your subscription logic
+	  // Logic to process subscription (e.g., redirect to a checkout page)
+	});
+  });
+  
+  
